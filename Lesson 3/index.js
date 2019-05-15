@@ -38,7 +38,7 @@ function chooseExpenses() {
       b != "" &&
       a.length < 50
     ) {
-      console.log("done");
+
       appData.expenses[a] = b;
     } else {
       i = i - 1;
