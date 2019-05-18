@@ -1,3 +1,6 @@
+
+
+
 let money, time;
 
 function start() {
@@ -96,4 +99,7 @@ do {
   let b = prompt('За сколько обойдется?'); 
   int++;
 }
-while (int < 4);*/
+while (int < 4);
+
+
+
