@@ -140,20 +140,6 @@ foo.sort((a, b) =>{
 console.log(foo);*/
 
 
-
-var arr = [1, 2, 3, 3, 3, 3, 4, 5];
-var arr2 = {};
-//var arr3 = {};
-
-for (var i = 0; i < arr.length; i++) {
-  if (arr2[arr[i]]) {
-    arr2[arr[i]] += 1;
-  } else {
-    arr2[arr[i]] = 1;
-  }
-}
-console.log(arr2);
-
 // var forsort = [];
 // for (var item in arr2)
 //   forsort.push([item, arr2[item]])
@@ -165,5 +151,31 @@ console.log(arr2);
 //   arr3[forsort[z][0]] = forsort[z][1];
 // }
 // console.log(arr3);
+ 
+let myText = document.querySelector('#myText');
+let myButton = document.querySelector('#myButton');
+let myList = document.querySelector('#list');
+
+myButton.addEventListener('click', function(e) {
+  if (myText.value === '') {
+    return;
+  }
+ 
+  let myElem = document.createElement('li');
+  myElem.textContent = myText.value;
+  myList.appendChild(myElem);
+  myElem.classList.add('item');
+
+  let delBtn = document.createElement('button');
+  delBtn.textContent = ' Удалить';
+  myElem.appendChild(delBtn);
+
+  myText.value ='';
+
+    delBtn.addEventListener('click', function(){
+      myList.removeChild(myElem);
+    });
 
 
+
+});
