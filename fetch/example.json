@@ -1,0 +1,22 @@
+
+
+[
+  {
+    "name": "John",
+    "age":  " 30 years old",
+    "car": "has car"
+  },
+  {
+    "name": "Jim",
+    "age": "60 years old",
+    "car": "has no car"
+  },
+  {
+    "name": "Jill",
+    "age": "34 years old",
+    "car": "has cars"
+  }
+
+
+]
+  
